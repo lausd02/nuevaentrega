@@ -1,0 +1,45 @@
+@mixin caja ($grid, $bg) {
+    grid-area:$grid;
+    background-color:$bg;
+    border-radius: 5px;
+    padding: 1rem;
+    .hache2{
+        color: black;
+    }
+    .iconos{
+        width: 100px;
+        display:block;
+        margin:0 auto;
+    }
+}
+.carrusel{
+    width: 1200px;
+    height:auto;
+    display:block;
+    margin:0 auto;
+    margin-right: 40px;
+}
+.contened{
+    width: 70%;
+	max-width: 200px;
+	margin: 15px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 4fr 1fr;
+    grid-template-areas: 
+        "ciudades tour monumentos";
+    grid-gap: 20px;
+}
+.ciudades{
+    @include caja (ciudades,$Color2)
+}
+.tour{
+    @include caja (tour,$Color2)
+}
+.monumentos{
+    @include caja (monumentos,$Color2)
+}
+iframe{
+    display: block;
+    margin:0 auto;
+}
