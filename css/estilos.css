@@ -28,15 +28,6 @@
   margin-bottom: 10px;
 }
 
-.visita {
-  position: absolute;
-  top: 100px;
-  left: 50px;
-  font-size: 80px;
-  color: #D92B04;
-  font-family: 'Shadows Into Light', cursive;
-}
-
 .carrusel {
   width: 1200px;
   height: auto;
@@ -46,8 +37,8 @@
 }
 
 .contened {
-  width: 90%;
-  max-width: 900px;
+  width: 70%;
+  max-width: 200px;
   margin: 15px auto;
   display: -ms-grid;
   display: grid;
@@ -63,13 +54,13 @@
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: ciudades;
-  background-color: #069DBF;
+  background-color: #A0DBF2;
   border-radius: 5px;
   padding: 1rem;
 }
 
-.ciudades h2 {
-  color: #D96907;
+.ciudades .hache2 {
+  color: black;
 }
 
 .ciudades .iconos {
@@ -87,8 +78,8 @@
   padding: 1rem;
 }
 
-.tour h2 {
-  color: #D96907;
+.tour .hache2 {
+  color: black;
 }
 
 .tour .iconos {
@@ -101,13 +92,13 @@
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: monumentos;
-  background-color: #069DBF;
+  background-color: #A0DBF2;
   border-radius: 5px;
   padding: 1rem;
 }
 
-.monumentos h2 {
-  color: #D96907;
+.monumentos .hache2 {
+  color: black;
 }
 
 .monumentos .iconos {
@@ -209,11 +200,38 @@ body {
   font-family: 'Shadows Into Light', cursive;
 }
 
+.guias {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.guias .titular {
+  margin-left: 22px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.guias p {
+  margin-left: 22px;
+  margin-top: 10px;
+  font-size: 15px;
+}
+
 @media only screen and (max-width: 768px) {
   .contenedor .banner {
     width: 500px;
   }
-  .contenedor h1 {
+  .contenedor .guia, .contenedor h1 {
     font-size: 35px;
     color: white;
   }

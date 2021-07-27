@@ -38,13 +38,30 @@ body{
     color:$Color4;
     font-family: 'Shadows Into Light', cursive;
 }
+.guias{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+     .titular{
+        margin-left: 22px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    p{
+        margin-left: 22px;
+        margin-top: 10px;
+        font-size: 15px;
+    }
+}
 
 @media only screen and (max-width: 768px){
     .contenedor{
         .banner{
             width: 500px;
         }
-        h1{
+        .guia, h1{
             font-size: 35px;
             color: white;
         }
